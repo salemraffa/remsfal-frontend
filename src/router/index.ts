@@ -45,6 +45,13 @@ const routes = [
         component: ProjectLayout,
         children: [
             {
+                path: 'tenancies/view',
+                name: 'TenantView',
+                props: true,
+                component: () => import('@/views/TenantView.vue'),
+            },
+
+            {
                 path: '',
                 name: 'ProjectDashboard',
                 props: true,
